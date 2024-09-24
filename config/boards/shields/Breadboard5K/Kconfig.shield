@@ -1,0 +1,2 @@
+config SHIELD_BREADBOARD5K
+    def_bool $(shields_list_contains, Breadboard5K)
