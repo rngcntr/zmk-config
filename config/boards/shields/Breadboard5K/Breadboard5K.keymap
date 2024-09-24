@@ -8,13 +8,13 @@
 
         default_layer {
             bindings = <
-                &mo 1       &kp KP_N1       &kp KP_N2       &kp KP_N3       &kp KP_N4
+                &mo 1       &kp KP_N1       &kp KP_N2       &kp KP_N3       &bootloader
             >;
         };
 
         bt_layer {
             bindings = <
-                &none       &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_CLR      &bootloader
+                &trans      &kp KP_N4       &bt BT_SEL 0    &bt BT_CLR      &bootloader
             >;
         };
     };
