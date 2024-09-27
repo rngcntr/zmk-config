@@ -1,8 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
     
-nice_view_spi: &spi1 {
-    cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
-};
+/*
+    nice_view_spi: &spi1 {
+        cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
+    };
+*/
 
 / {
     chosen {
