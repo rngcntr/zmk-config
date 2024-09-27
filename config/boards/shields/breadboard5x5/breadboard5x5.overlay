@@ -1,14 +1,18 @@
-#include <dt-bindings/zmk/matrix-transform.h>
+#include <dt-bindings/zmk/matrix_transform.h>
+    
+nice_view_spi: &spi1 {
+    cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
+};
 
 / {
     chosen {
-        zmk,kscan = &default_kscan;
-        zmk,matrix_transform = &default_transform;
+        zmk,kscan = &kscan;
+        zmk,matrix_transform = &transform;
     };
 
-    default_kscan: kscan {
+    kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "default_kscan";
+        label = "KSCAN";
         diode-direction = "col2row";
 
         row-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -24,7 +28,7 @@
                     <&pro_micro 21 GPIO_ACTIVE_HIGH>;
     };
 
-    default_transform: matrix_transform {
+    transform: matrix_transform {
         compatible = "zmk,matrix-transform";
         rows = <5>;
         columns = <5>;
@@ -37,8 +41,4 @@
             RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4)
         >;
     };
-};
-    
-nice_view_spi: &spi1 {
-    cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
 };

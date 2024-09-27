@@ -1,6 +1,0 @@
-if SHIELD_BREADBOARD5K
-
-config ZMK_KEYBOARD_NAME
-    default "Breadboard5K"
-
-endif

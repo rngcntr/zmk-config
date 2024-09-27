@@ -1,0 +1,6 @@
+if SHIELD_BREADBOARD5X5
+
+config ZMK_KEYBOARD_NAME
+    default "Breadboard5x5"
+
+endif
