@@ -1,2 +1,0 @@
-config SHIELD_BREADBOARD5X5
-    def_bool $(shields_list_contains,breadboard5x5)

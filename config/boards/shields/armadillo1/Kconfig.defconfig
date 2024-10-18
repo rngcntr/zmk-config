@@ -1,0 +1,6 @@
+if SHIELD_ARMADILLO1
+
+config ZMK_KEYBOARD_NAME
+    default "Armadillo1"
+
+endif
