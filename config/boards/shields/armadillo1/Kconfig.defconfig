@@ -1,4 +1,4 @@
-if SHIELD_ARMADILLO1_RIGHT
+if SHIELD_ARMADILLO1_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
