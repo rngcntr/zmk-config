@@ -22,3 +22,5 @@ include:
     shield: armadillo1_left nice_view
   - board: nice_nano_v2
     shield: armadillo1_right nice_view
+  - board: nice_nano_v2
+    shield: settings_reset
