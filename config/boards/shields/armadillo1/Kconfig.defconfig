@@ -1,6 +1,17 @@
-if SHIELD_ARMADILLO1
+if SHIELD_ARMADILLO1_LEFT
 
+# Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
     default "Armadillo1"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_ARMADILLO1_LEFT || SHIELD_ARMADILLO1_RIGHT
+
+config ZMK_SPLIT
+    default y
 
 endif
