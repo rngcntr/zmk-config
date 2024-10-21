@@ -82,7 +82,7 @@
 
         escape {
             bindings = <&kp ESC>;
-            key-positions = <11 12>;
+            key-positions = <1 2>;
         };
 
         capslock {
@@ -93,6 +93,11 @@
         delete {
             bindings = <&kp DELETE>;
             key-positions = <7 6>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <11 12>;
         };
     };
 
