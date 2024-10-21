@@ -79,21 +79,21 @@
             >;
         };
 
-        NUMERIC {
+        SYMBOLS {
             bindings = <
-&kp N1    &kp N2    &kp N3      &kp N4     &kp N5   &kp N6     &kp N7     &kp N8      &kp N9  &kp N0
-&kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &trans   &trans     &kp N4     &kp N5      &kp N6  &kp BSPC
-&trans    &trans    &trans      &trans     &trans   &trans     &kp N1     &kp N2      &kp N3  &kp DELETE
-                    &moto 3 3   &moto 0 0  &kp TAB  &kp SPACE  &kp KP_N0  &kp KP_DOT
+&kp EXCL           &kp AT_SIGN               &kp HASH                  &kp DLLR           &kp PRCNT  &kp CARET  &kp AMPS           &kp STAR                   &kp MINUS                  &kp EQUAL
+&bhmrs LGUI GRAVE  &bhmlf LALT LEFT_BRACKET  &bhmlf LSHIFT LEFT_BRACE  &bhmlf LCTRL LPAR  &trans     &trans     &bhmrf RCTRL RPAR  &bhmrf RSHIFT RIGHT_BRACE  &bhmrf RALT RIGHT_BRACKET  &bhmrs RGUI SQT
+&trans             &trans                    &trans                    &trans             &trans     &trans     &trans             &trans                     &trans                     &kp BACKSLASH
+                                             &moto 3 3                 &moto 0 0          &kp TAB    &kp SPACE  &kp CAPSLOCK       &trans
             >;
         };
 
-        SYMBOLS {
+        NUMERIC {
             bindings = <
-&kp EXCL           &kp AT_SIGN  &kp HASH    &kp DLLR   &kp PRCNT  &kp CARET  &kp AMPS            &kp STAR                 &kp LPAR                  &kp RPAR
-&bhmrs LGUI GRAVE  &kp LALT     &kp LSHIFT  &kp LCTRL  &trans     &kp MINUS  &bhmrf RCTRL EQUAL  &bhmrf RSHIFT BACKSLASH  &bhmrf RALT LEFT_BRACKET  &bhmrs RGUI RIGHT_BRACKET
-&trans             &trans       &trans      &trans     &trans     &trans     &trans              &trans                   &trans                    &kp SINGLE_QUOTE
-                                &moto 0 0   &moto 3 3  &kp TAB    &kp SPACE  &kp CAPSLOCK        &trans
+&kp N1    &kp N2    &kp N3      &kp N4     &kp N5   &kp N6     &kp N7     &kp N8      &kp N9  &kp N0
+&kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &sl 4    &sl 4      &kp N4     &kp N5      &kp N6  &kp BSPC
+&trans    &trans    &trans      &trans     &trans   &trans     &kp N1     &kp N2      &kp N3  &kp DELETE
+                    &moto 0 0   &moto 3 3  &kp TAB  &kp SPACE  &kp KP_N0  &kp KP_DOT
             >;
         };
 
@@ -103,6 +103,15 @@
 &bmhls LGUI C_BRIGHTNESS_INC  &bhmlf LALT C_VOL_UP  &bhmlf LSHIFT C_NEXT  &kp LCTRL  &trans   &kp LEFT    &kp DOWN         &kp UP_ARROW    &kp RIGHT        &bt BT_NXT
 &kp C_BRIGHTNESS_DEC          &kp C_VOL_DN          &kp C_PREV            &trans     &trans   &kp HOME    &kp PAGE_DOWN    &kp PG_UP       &kp END          &bt BT_PRV
                                                     &moto 0 0             &moto 0 0  &kp ESC  &kp ESC     &trans           &bootloader
+            >;
+        };
+
+        FUNCTION {
+            bindings = <
+&kp F1    &kp F2    &kp F3      &kp F4     &kp F5  &kp F6  &kp F7           &kp F8            &kp F9          &kp F10
+&kp LGUI  &kp LALT  &kp LSHIFT  &kp LCTRL  &trans  &trans  &bhmrf RCTRL F4  &bhmrf RSHIFT F5  &bhmrf RALT F6  &bhmrs RGUI F11
+&trans    &trans    &trans      &trans     &trans  &trans  &kp F1           &kp F2            &kp F3          &kp F12
+                    &trans      &trans     &trans  &trans  &trans           &trans
             >;
         };
     };
