@@ -72,22 +72,27 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
+            key-positions = <16 17>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <19 18>;
+            key-positions = <18 17>;
         };
 
         escape {
             bindings = <&kp ESC>;
-            key-positions = <0 1>;
+            key-positions = <11 12>;
         };
 
         capslock {
             bindings = <&kp CAPS>;
-            key-positions = <10 11>;
+            key-positions = <12 13>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <7 6>;
         };
     };
 
