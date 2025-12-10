@@ -1,0 +1,7 @@
+# No whitespace after the comma or in your part name!
+config SHIELD_ARMADILLO_ZERO_LEFT
+    def_bool $(shields_list_contains,armadillo_zero_left)
+
+# No whitespace after the comma or in your part name!
+config SHIELD_ARMADILLO_ZERO_RIGHT
+    def_bool $(shields_list_contains,armadillo_zero_right)

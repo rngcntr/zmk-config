@@ -19,8 +19,8 @@
 ---
 include:
   - board: nice_nano
-    shield: armadillo1_left nice_view
+    shield: armadillo_zero_left nice_view
   - board: nice_nano
-    shield: armadillo1_right nice_view
+    shield: armadillo_zero_right nice_view
   - board: nice_nano
     shield: settings_reset

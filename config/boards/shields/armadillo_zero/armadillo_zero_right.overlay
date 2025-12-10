@@ -1,4 +1,4 @@
-#include "armadillo1.dtsi"
+#include "armadillo_zero.dtsi"
 
 &transform {
     col-offset = <5>;
