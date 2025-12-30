@@ -1,0 +1,17 @@
+file_format: "1"
+id: armadillo_zero
+name: Armadillo Zero
+manufacturer: rngcntr
+type: shield
+url: https://github.com/rngcntr/zmk-config
+requires:
+  - pro_micro
+exposes:
+  - i2c_oled
+features:
+  - keys
+  - display
+  # - studio (required for zmk studio support)
+siblings:
+  - armadillo_zero_left
+  - armadillo_zero_right

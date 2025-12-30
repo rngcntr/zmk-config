@@ -1,10 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "armadillo_zero-layouts.dtsi"
     
 / {
     chosen {
         zephyr,display = &oled;
-        zmk,kscan = &kscan;
-        zmk,matrix_transform = &transform;
+        kscan = &kscan;
+        zmk,physical-layout = &physical_layout0;
     };
 
     kscan: kscan {
@@ -32,6 +33,9 @@
     };
 };
 
+&physical_layout0 {
+    transform = <&transform>;
+};
 
 &pro_micro_i2c {
     status = "okay";
